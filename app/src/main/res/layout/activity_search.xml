@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="codswallop.groupmesearch.SelectedGroupSearch">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <Spinner
+            android:id="@+id/person"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/colorPrimaryDark"
+            android:dropDownWidth="wrap_content" />
+
+        <EditText
+            android:id="@+id/keyword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorPrimaryDark"
+            android:hint="Keywords/Phrase"
+            android:padding="8dp"
+            android:textAppearance="@style/Title"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#aeaeae" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: "
+            android:textAppearance="@style/Body"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/dateFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="5"
+            android:hint="MM/DD/YYYY"
+            android:inputType="date"
+            android:textAppearance="@style/Body"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#aeaeae" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" To: "
+            android:textAppearance="@style/Body"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/dateTo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="5"
+            android:hint="MM/DD/YYYY"
+            android:inputType="date"
+            android:textAppearance="@style/Body"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#aeaeae" />
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="GO"
+            android:textAppearance="@style/Title"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/firstBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text=""
+        android:textAppearance="@style/Title" />
+
+    <ListView
+        android:id="@+id/messageShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:stackFromBottom="true" />
+
+</LinearLayout>
+

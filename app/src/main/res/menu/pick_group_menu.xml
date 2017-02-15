@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="codswallop.groupmesearch.PickGroup"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:visible="true"
+        android:actionLayout="@layout/activity_pick_group"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Log Out"
+        android:id="@+id/log_out"
+        app:showAsAction="always"/>
+
+</menu>

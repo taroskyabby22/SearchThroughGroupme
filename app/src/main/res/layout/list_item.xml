@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/list_icon" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_height="60dp"
+        android:layout_gravity="top">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:textAppearance="@style/Title"
+                android:text="Title"
+                android:id="@+id/list_text"
+                android:textAlignment="gravity" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textAppearance="@style/Body"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Date"
+                android:id="@+id/list_date"
+                android:textAlignment="gravity"
+                android:textColor="#a0a0a0" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Body"
+            android:text="Last Message"
+            android:id="@+id/list_text_description" />
+
+    </LinearLayout>
+
+</LinearLayout>
